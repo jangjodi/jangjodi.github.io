@@ -1,0 +1,8 @@
+[package]
+name = "personal-website"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+phf = { version = "0.11.2", features = ["macros"] }
+yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
