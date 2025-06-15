@@ -16,6 +16,7 @@ use constants::THALES_EXPERIENCE;
 use yew::prelude::*;
 mod components;
 pub mod constants;
+use constants::META_EXPERIENCE;
 use constants::SENTRY_EXPERIENCE;
 use constants::FORD_EXPERIENCE;
 use constants::SUNNYBROOK_EXPERIENCE;
@@ -28,13 +29,13 @@ fn app() -> Html {
             id: 0,
             name: "LinkedIn".to_string(),
             image: "assets/linkedin_logo.png".to_string(),
-            link: "https://www.linkedin.com/in/jodi-jang-0433951a1/".to_string()
+            link: "https://www.linkedin.com/in/jodijang".to_string()
         },
         Contact {
             id: 1,
             name: "Github".to_string(),
             image: "assets/github_logo.svg".to_string(),
-            link: "https://www.https://github.com/jangjodi".to_string()
+            link: "https://github.com/jangjodi".to_string()
         }
     ];
     
@@ -45,6 +46,7 @@ fn app() -> Html {
     ];
 
     let experiences: Vec<Experience> = vec![
+        build_experience(META_EXPERIENCE),
         build_experience(SENTRY_EXPERIENCE),
         build_experience(FORD_EXPERIENCE),
         build_experience(SUNNYBROOK_EXPERIENCE),
