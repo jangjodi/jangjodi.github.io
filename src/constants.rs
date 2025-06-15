@@ -4,6 +4,13 @@ pub const SKILLS: [&str; 3] = [
     "Postgres, MongoDB, Redis"
 ];
 
+pub const META_EXPERIENCE: [&str; 4] = [
+    "Meta",
+    "Software Engineer II",
+    "January 2025 - Present",
+    "Classification and Measurement Team, building and validating sensitive content classifiers to protect young users"
+];
+
 pub const SENTRY_EXPERIENCE: [&str; 4] = [
     "Sentry",
     "Software Engineer II",
